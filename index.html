@@ -1,29 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password Generator</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <div class="wrapper">
-        <a href="/">
-          <h1 class="title">Ciphery</h1>
-          <p class="subtitle">Unlock your world with secure passwords!</p>
-        </a>
-        <div class="links">
-          <button class="link" href="">
-            <img src="./img/sun.svg" alt="Theme">
-          </button>
-          <a class="link" href="https://github.com/webshogun/password-generator">
-            <img src="./img/github.svg" alt="Github">
-          </a>
-        </div>
-      </div>
+  <header class="header">
+    <div>
+      <h1 class="title">Ciphery</h1>
+      <p class="subtitle">Unlock your world with secure passwords!</p>
+    </div>
+    <div class="icons">
+      <button class="icon" href="">
+        <img src="./img/sun.svg" alt="Theme">
+      </button>
+      <a class="icon" href="https://github.com/webshogun/password-generator">
+        <img src="./img/github.svg" alt="Github">
+      </a>
     </div>
   </header>
+  <main class="main">
+    <div class="wrapper left">
+      <div>
+        <h3>Default password</h3>
+        <div class="row">
+          <input class="password" type="text" value="32tqk&fa4@4z">
+          <button class="copy">
+            <img src="./img/copy.svg" alt="Copy">
+          </button>
+          <button class="button">Generate</button>
+        </div>
+      </div>
+      <div>
+        <h3>Generated hash</h3>
+        <div class="row">
+          <input class="password" type="text" value="32tqk&fa4@4z">
+          <button class="button gap"><img src="./img/copy-light.svg" alt="Copy">Copy</button>
+        </div>
+      </div>
+      <div class="checkboxes">
+        <button class="checkbox">MD5</button>
+        <button class="checkbox">SHA-1</button>
+        <button class="checkbox">bycript</button>
+      </div>
+    </div>
+    <div class="wrapper right">
+      <div>
+        <h3>Features</h3>
+        <div class="inner">
+          <button class="checkbox">ABC</button>
+          <button class="checkbox">abc</button>
+          <button class="checkbox">123</button>
+          <button class="checkbox">!#@</button>
+        </div>
+      </div>
+      <div>
+        <h3>Size</h3>
+        <input class="size" type="text" value="12">
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>

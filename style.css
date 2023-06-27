@@ -1,22 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
 
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  width: 1125px;
   color: #A1A1AA;
   background: #26292B;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 10px;
-  max-width: 1125px;
-  height: -webkit-fill-available;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, button {
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 *, *::before, *::after {
@@ -45,34 +53,132 @@ label {
   display: block;
 }
 
-.wrapper {
+.header {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
   justify-content: space-between;
 }
 
 .title {
   font-weight: 800;
   font-size: 40px;
-  line-height: 42px;
+  line-height: 106%;
   color: #E4E4E7;
 }
 
 .subtitle {
   font-weight: 500;
   font-size: 20px;
-  line-height: 22px;
   color: #666e7c;
 }
 
-.links {
+.icons {
   display: flex;
   gap: 8px;
 }
 
-.link {
+.icon {
   display: inline-flex;
   padding: 8px;
+  border-radius: 4px;
+  background: #2E3239;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.wrapper {
+  padding: 32px;
+  border-radius: 12px;
+  border: #2E3239 solid 1px;
+}
+
+.left {
+  width: 70%;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.password {
+  flex: auto;
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #2E3239;
+}
+
+.copy {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #2E3239;
+}
+
+.button {
+  height: 40px;
+  width: 110px;
+  color: #E4E4E7;
+  border-radius: 4px;
+  background: #5F7ADB
+}
+
+.gap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkboxes {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.checkbox {
+  font-weight: 600;
+  font-size: 12px;
+  color: #666E7C;
+  border: #666E7C solid 1px;
+  border-radius: 16px;
+  height: 24px;
+  padding: 0 18px;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+.size {
+  width: 56px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 8px;
   border-radius: 4px;
   background: #2E3239;
 }
