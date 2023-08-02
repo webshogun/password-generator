@@ -16,7 +16,7 @@
       <p class="subtitle">Unlock your world with secure passwords!</p>
     </div>
     <div class="icons">
-      <button class="icon" type="button" onclick="ThemeHandler()">
+      <button class="icon" type="button" onclick="themeHandler()">
         <img src="./img/sun.svg" alt="Theme">
       </button>
       <a class="icon" href="https://github.com/webshogun/password-generator">
@@ -29,8 +29,8 @@
       <div>
         <h3>Default password</h3>
         <div class="row">
-          <input class="password" type="text" value="32tqk&fa4@4z">
-          <button class="copy">
+          <input class="password" id="password" type="text" value="32tqk&fa4@4z">
+          <button class="copy" type="button" onclick="copyHandler('password')">
             <img src="./img/copy.svg" alt="Copy">
           </button>
           <button class="button">Generate</button>
@@ -39,8 +39,8 @@
       <div>
         <h3>Generated hash</h3>
         <div class="row">
-          <input class="password" type="text" value="32tqk&fa4@4z">
-          <button class="button gap"><img src="./img/copy-light.svg" alt="Copy">Copy</button>
+          <input class="password" id="hash" type="text" value="1928efb23192b5d71b6b28bb036cd1dc6532afb4">
+          <button class="button gap" type="button" onclick="copyHandler('hash')"><img src="./img/copy-light.svg" alt="Copy">Copy</button>
         </div>
       </div>
       <div class="checkboxes">

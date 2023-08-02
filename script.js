@@ -7,8 +7,13 @@ function setTheme(theme) {
 
 setTheme(selectedTheme);
 
-function ThemeHandler() {
+function themeHandler() {
   selectedTheme = selectedTheme === 'dark' ? 'light' : 'dark';
   setTheme(selectedTheme);
   localStorage.setItem('theme', selectedTheme);
+}
+
+function copyHandler(id) {
+  const copy = document.getElementById(id);
+  navigator.clipboard.writeText(copy.value);
 }
