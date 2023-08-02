@@ -1,0 +1,32 @@
+body {
+  color: #26292B;
+  background: #FFFFFF;
+}
+
+.title {
+  color: #27272A;
+}
+
+.subtitle {
+  color: #27272A;
+}
+
+.icon {
+  background: #E4E4E7;
+}
+
+.wrapper {
+  border: #E4E4E7 solid 1px;
+}
+
+.password {
+  background: #E4E4E7;
+}
+
+.copy {
+  background: #E4E4E7;
+}
+
+.size {
+  background: #E4E4E7;
+}
