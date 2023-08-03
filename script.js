@@ -1,6 +1,6 @@
 const stylesheet = document.getElementById('theme');
-let selectedTheme = localStorage.getItem('theme');
 const pass = document.getElementById('password');
+let selectedTheme = localStorage.getItem('theme');
 
 function setTheme(theme) {
   stylesheet.setAttribute('href', `styles/${theme}-theme.css`);
@@ -20,7 +20,14 @@ function copyHandler(id) {
 }
 
 function generatePassword() {
-  const length = 12;
+  const size = document.querySelector('.size');
+  const length = parseInt(size.value);
+
+  if (isNaN(length) || length <= 0) {
+    alert('Please enter a valid positive number for password length.');
+    return;
+  }
+
   const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
 
   let password = '';
